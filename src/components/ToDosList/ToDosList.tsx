@@ -26,7 +26,7 @@ const ToDosList = () => {
 
   return (
     <div className='w-full flex flex-col'>
-      <div className='w-full shadow-md overflow-y-scroll max-h-[38rem]' style={{background: 'white'}}>
+      <div className='w-full shadow-md overflow-y-scroll sm:max-h-[38rem] max-h-[25rem]' style={{background: 'white'}}>
 
         {
           filteredList &&
@@ -37,7 +37,7 @@ const ToDosList = () => {
           })
         }
       </div>
-      <div className='bg-white shadow-md border-t-black border-t border-opacity-10 p-4 text-[1rem] font-extralight flex items-center justify-between' >
+      <div className='bg-white shadow-md border-t-black border-t border-opacity-10 p-4 text-[1rem] font-extralight flex sm:flex-row flex-col sm:gap-0 gap-4 items-center justify-between' >
         <span>
           {todoList.filter(e => e.isDone !== true).length}
           <span className='ml-1'>items left</span>

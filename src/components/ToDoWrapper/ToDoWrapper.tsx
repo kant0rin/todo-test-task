@@ -20,7 +20,7 @@ const ToDoWrapper = () => {
 
   return (
     <div className='p-10 w-full flex justify-center items-center'>
-      <div className='flex flex-col items-center justify-center w-[31.25rem]'>
+      <div className='flex flex-col items-center justify-center sm:w-[31.25rem] w-[25rem]'>
         <h1 className='text-[7rem] font-thin leading-[1.25] text-[#e9d9d8]'>todos</h1>
         <MyForm
           placeholder='What needs to be done?'
